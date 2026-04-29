@@ -31,7 +31,7 @@
   --color-surface: var(--surface);
   --color-surface-foreground: var(--surface-foreground);
 
-  --font-display: "Playfair Display", "Times New Roman", serif;
+  --font-display: "Bebas Neue", "Oswald", "Impact", sans-serif;
   --font-sans: "Inter", system-ui, sans-serif;
 
   --shadow-glow: 0 0 60px -10px color-mix(in oklab, var(--primary) 40%, transparent);
@@ -39,29 +39,29 @@
 }
 
 :root {
-  --radius: 0.25rem;
-  /* Cinematic dark theme — deep charcoal + warm amber accent */
-  --background: oklch(0.13 0.005 60);
-  --foreground: oklch(0.96 0.005 80);
-  --surface: oklch(0.18 0.008 60);
-  --surface-foreground: oklch(0.96 0.005 80);
-  --card: oklch(0.16 0.006 60);
-  --card-foreground: oklch(0.96 0.005 80);
-  --popover: oklch(0.16 0.006 60);
-  --popover-foreground: oklch(0.96 0.005 80);
-  --primary: oklch(0.78 0.14 65); /* warm amber */
-  --primary-foreground: oklch(0.13 0.005 60);
-  --secondary: oklch(0.22 0.008 60);
-  --secondary-foreground: oklch(0.96 0.005 80);
-  --muted: oklch(0.2 0.006 60);
-  --muted-foreground: oklch(0.65 0.01 70);
-  --accent: oklch(0.78 0.14 65);
-  --accent-foreground: oklch(0.13 0.005 60);
-  --destructive: oklch(0.6 0.22 27);
+  --radius: 0rem;
+  /* NZ drift theme — pitch black, blood red accent, smoke white */
+  --background: oklch(0.11 0.005 20);
+  --foreground: oklch(0.97 0.003 80);
+  --surface: oklch(0.15 0.006 20);
+  --surface-foreground: oklch(0.97 0.003 80);
+  --card: oklch(0.14 0.006 20);
+  --card-foreground: oklch(0.97 0.003 80);
+  --popover: oklch(0.14 0.006 20);
+  --popover-foreground: oklch(0.97 0.003 80);
+  --primary: oklch(0.6 0.235 25); /* aggressive crimson */
+  --primary-foreground: oklch(0.97 0.003 80);
+  --secondary: oklch(0.2 0.006 20);
+  --secondary-foreground: oklch(0.97 0.003 80);
+  --muted: oklch(0.18 0.005 20);
+  --muted-foreground: oklch(0.62 0.01 60);
+  --accent: oklch(0.6 0.235 25);
+  --accent-foreground: oklch(0.97 0.003 80);
+  --destructive: oklch(0.6 0.235 25);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.25 0.008 60);
-  --input: oklch(0.25 0.008 60);
-  --ring: oklch(0.78 0.14 65);
+  --border: oklch(0.22 0.008 20);
+  --input: oklch(0.22 0.008 20);
+  --ring: oklch(0.6 0.235 25);
 }
 
 .dark {
