@@ -8,7 +8,7 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About - DMAC Media" },
-      { name: "description", content: "DMAC Media - a one-man drift photography crew based in NZ, shooting since 2019." },
+      { name: "description", content: "DMAC Media - a one-man drift photography crew based in NZ, shooting since 2025." },
       { property: "og:title", content: "About - DMAC Media" },
       { property: "og:description", content: "About DMAC Media." },
     ],
@@ -31,7 +31,7 @@ function About() {
         </div>
         <div className="text-muted-foreground space-y-4 text-lg">
           <p>
-            DMAC Media started in 2019 in a Hamilton garage, shooting mates'
+            DMAC Media started in 2025 in a Hamilton garage, shooting mates'
             S-chassis builds on grainy 35mm. Six years later we're trackside at
             every major NZ drift round.
           </p>
