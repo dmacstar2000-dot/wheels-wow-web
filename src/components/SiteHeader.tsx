@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
+import logo from "@/assets/dmac-logo.png";
 
 const links = [
   { to: "/", label: "Home" },
@@ -12,19 +13,18 @@ const links = [
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="absolute top-0 left-0 right-0 z-50">
-      <div className="container-x flex items-center justify-between py-6">
-        <Link to="/" className="flex items-baseline gap-1 text-foreground">
-          <span className="font-display text-2xl tracking-tight">DMAC</span>
-          <span className="text-xs uppercase tracking-[0.3em] text-primary">Media</span>
+    <header className="sticky top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur border-b border-border">
+      <div className="container-x flex items-center justify-between py-4">
+        <Link to="/" className="flex items-center" aria-label="DMAC Media — Home">
+          <img src={logo} alt="DMAC Media" className="h-10 w-auto" />
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (
             <Link
               key={l.to}
               to={l.to}
-              className="text-sm uppercase tracking-[0.15em] text-muted-foreground hover:text-foreground transition-colors"
-              activeProps={{ className: "text-primary" }}
+              className="text-xs uppercase tracking-[0.25em] text-muted-foreground hover:text-foreground transition-colors"
+              activeProps={{ className: "text-foreground" }}
               activeOptions={{ exact: true }}
             >
               {l.label}
@@ -43,14 +43,14 @@ export function SiteHeader() {
         </button>
       </div>
       {open && (
-        <div className="md:hidden bg-background/95 backdrop-blur border-t border-border">
+        <div className="md:hidden bg-background border-t border-border">
           <nav className="container-x flex flex-col py-6 gap-4">
             {links.map((l) => (
               <Link
                 key={l.to}
                 to={l.to}
                 onClick={() => setOpen(false)}
-                className="text-sm uppercase tracking-[0.15em] text-muted-foreground hover:text-primary"
+                className="text-sm uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground"
               >
                 {l.label}
               </Link>

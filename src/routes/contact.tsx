@@ -54,7 +54,7 @@ function Contact() {
         >
           {sent ? (
             <div className="py-12 text-center">
-              <h3 className="font-display text-4xl uppercase text-primary">Cheers!</h3>
+              <h3 className="font-display text-4xl uppercase text-accent">Cheers!</h3>
               <p className="mt-2 text-muted-foreground">We'll be in touch shortly.</p>
             </div>
           ) : (
