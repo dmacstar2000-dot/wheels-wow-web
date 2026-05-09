@@ -44,7 +44,12 @@ function Contact() {
           </div>
           <div>
             <p className="eyebrow mb-2">Socials</p>
-            <p className="text-lg">@dmac.media</p>
+            <ul className="text-lg space-y-1">
+              <li><a href="https://www.instagram.com/dmac_media.ltd/" target="_blank" rel="noopener noreferrer" className="hover:text-accent">Instagram</a></li>
+              <li><a href="https://www.tiktok.com/@dmac_media.nz" target="_blank" rel="noopener noreferrer" className="hover:text-accent">TikTok</a></li>
+              <li><a href="https://www.youtube.com/@Dmac_media" target="_blank" rel="noopener noreferrer" className="hover:text-accent">YouTube</a></li>
+              <li><a href="https://www.facebook.com/share/1ACu1Bdxgd/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="hover:text-accent">Facebook</a></li>
+            </ul>
           </div>
         </div>
 
