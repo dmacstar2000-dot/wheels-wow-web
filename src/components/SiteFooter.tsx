@@ -6,7 +6,7 @@ export function SiteFooter() {
     <footer className="border-t border-border mt-32 bg-surface">
       <div className="container-x py-16 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-2">
-          <img src={logo} alt="DMAC Media" className="h-20 w-auto" />
+          <img src={logo} alt="DMAC Media" className="h-28 w-auto" />
           <p className="mt-4 text-muted-foreground max-w-sm">
             Drift. Create. Elevate. Impact. New Zealand drift photography &amp;
             film — trackside from Hampton Downs to Highlands.
