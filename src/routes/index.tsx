@@ -31,14 +31,12 @@ function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-background/60 to-transparent" />
 
         <div className="container-x relative z-10 pb-20 md:pb-32 pt-32">
-          <p className="eyebrow mb-6">Aotearoa · Drift · Since 2019</p>
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[0.9] uppercase max-w-4xl">
-            Smoke. Steel.<br />
-            <span className="text-accent">Sideways.</span>
+          <p className="eyebrow mb-4">Aotearoa · Since 2019</p>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[0.9] uppercase max-w-3xl">
+            Smoke. Steel. <span className="text-accent">Sideways.</span>
           </h1>
-          <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-            DMAC Media is a New Zealand drift photography & film crew. We chase
-            tyre smoke from Hampton Downs to Highlands — and everything in between.
+          <p className="mt-4 max-w-md text-base text-muted-foreground">
+            NZ drift photography & film — trackside from Hampton Downs to Highlands.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link to="/portfolio" className="btn-primary">View the work →</Link>
