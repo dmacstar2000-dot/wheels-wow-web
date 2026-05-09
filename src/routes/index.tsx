@@ -34,7 +34,7 @@ function Home() {
           <p className="eyebrow mb-6">Aotearoa · Drift · Since 2019</p>
           <h1 className="font-display text-6xl md:text-8xl lg:text-9xl leading-[0.9] uppercase max-w-5xl">
             Smoke. Steel.<br />
-            <span className="text-primary">Sideways.</span>
+            <span className="text-accent">Sideways.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted-foreground">
             DMAC Media is a New Zealand drift photography & film crew. We chase
@@ -51,13 +51,13 @@ function Home() {
           <div className="flex gap-12 animate-[scroll_30s_linear_infinite] whitespace-nowrap">
             {Array.from({ length: 2 }).map((_, i) => (
               <div key={i} className="flex gap-12 text-xs uppercase tracking-[0.3em] text-muted-foreground">
-                <span>Hampton Downs</span><span className="text-primary">×</span>
-                <span>Highlands Motorsport Park</span><span className="text-primary">×</span>
-                <span>Pukekohe</span><span className="text-primary">×</span>
-                <span>Manfeild</span><span className="text-primary">×</span>
-                <span>Ruapuna</span><span className="text-primary">×</span>
-                <span>D1NZ</span><span className="text-primary">×</span>
-                <span>Drift South</span><span className="text-primary">×</span>
+                <span>Hampton Downs</span><span className="text-accent">×</span>
+                <span>Highlands Motorsport Park</span><span className="text-accent">×</span>
+                <span>Pukekohe</span><span className="text-accent">×</span>
+                <span>Manfeild</span><span className="text-accent">×</span>
+                <span>Ruapuna</span><span className="text-accent">×</span>
+                <span>D1NZ</span><span className="text-accent">×</span>
+                <span>Drift South</span><span className="text-accent">×</span>
               </div>
             ))}
           </div>
@@ -74,7 +74,7 @@ function Home() {
             ["NZ", "Born & built"],
           ].map(([n, l]) => (
             <div key={l} className="px-6 py-10 text-center">
-              <div className="font-display text-5xl md:text-6xl text-primary">{n}</div>
+              <div className="font-display text-5xl md:text-6xl text-foreground">{n}</div>
               <div className="mt-2 text-xs uppercase tracking-[0.25em] text-muted-foreground">{l}</div>
             </div>
           ))}

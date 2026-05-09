@@ -58,7 +58,7 @@ function Services() {
         {services.map((s) => (
           <div key={s.n} className="bg-background p-10 group hover:bg-surface transition">
             <div className="flex items-start justify-between">
-              <span className="font-display text-5xl text-primary">{s.n}</span>
+              <span className="font-display text-5xl text-accent">{s.n}</span>
               <span className="text-xs uppercase tracking-[0.25em] text-muted-foreground">{s.price}</span>
             </div>
             <h3 className="font-display text-3xl uppercase mt-8">{s.title}</h3>

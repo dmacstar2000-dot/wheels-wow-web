@@ -59,7 +59,7 @@ function Portfolio() {
                   <h3 className="font-display text-2xl uppercase">{it.title}</h3>
                   <p className="text-sm text-muted-foreground">{it.car}</p>
                 </div>
-                <span className="text-xs uppercase tracking-[0.25em] text-primary">{it.loc}</span>
+                <span className="text-xs uppercase tracking-[0.25em] text-accent">{it.loc}</span>
               </div>
             </figcaption>
           </figure>

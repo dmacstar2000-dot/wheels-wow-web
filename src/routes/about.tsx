@@ -24,7 +24,7 @@ function About() {
           <p className="eyebrow mb-4">Who we are</p>
           <h1 className="font-display text-6xl md:text-8xl uppercase leading-[0.9]">
             One mate.<br />
-            <span className="text-primary">One camera.</span><br />
+            <span className="text-accent">One camera.</span><br />
             One scene.
           </h1>
         </div>
