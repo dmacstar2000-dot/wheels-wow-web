@@ -14,9 +14,9 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur border-b border-border">
-      <div className="container-x flex items-center justify-between py-4">
+      <div className="container-x flex items-center justify-between py-3">
         <Link to="/" className="flex items-center" aria-label="DMAC Media — Home">
-          <img src={logo} alt="DMAC Media" className="h-10 w-auto" />
+          <img src={logo} alt="DMAC Media" className="h-20 w-auto" />
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (
