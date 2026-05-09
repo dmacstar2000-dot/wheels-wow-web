@@ -40,28 +40,28 @@
 
 :root {
   --radius: 0rem;
-  /* NZ drift theme — pitch black, blood red accent, smoke white */
-  --background: oklch(0.11 0.005 20);
-  --foreground: oklch(0.97 0.003 80);
-  --surface: oklch(0.15 0.006 20);
-  --surface-foreground: oklch(0.97 0.003 80);
-  --card: oklch(0.14 0.006 20);
-  --card-foreground: oklch(0.97 0.003 80);
-  --popover: oklch(0.14 0.006 20);
-  --popover-foreground: oklch(0.97 0.003 80);
-  --primary: oklch(0.6 0.235 25); /* aggressive crimson */
-  --primary-foreground: oklch(0.97 0.003 80);
-  --secondary: oklch(0.2 0.006 20);
-  --secondary-foreground: oklch(0.97 0.003 80);
-  --muted: oklch(0.18 0.005 20);
-  --muted-foreground: oklch(0.62 0.01 60);
-  --accent: oklch(0.6 0.235 25);
-  --accent-foreground: oklch(0.97 0.003 80);
-  --destructive: oklch(0.6 0.235 25);
-  --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.22 0.008 20);
-  --input: oklch(0.22 0.008 20);
-  --ring: oklch(0.6 0.235 25);
+  /* DMAC Media — clean monochrome to match the logo. White paper, ink black, single red spark. */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.16 0.005 240);
+  --surface: oklch(0.985 0.002 240);
+  --surface-foreground: oklch(0.16 0.005 240);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.16 0.005 240);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.16 0.005 240);
+  --primary: oklch(0.16 0.005 240); /* logo ink black */
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.96 0.002 240);
+  --secondary-foreground: oklch(0.16 0.005 240);
+  --muted: oklch(0.96 0.002 240);
+  --muted-foreground: oklch(0.45 0.005 240);
+  --accent: oklch(0.58 0.22 27); /* subtle drift-red spark */
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.58 0.22 27);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.9 0.003 240);
+  --input: oklch(0.9 0.003 240);
+  --ring: oklch(0.16 0.005 240);
 }
 
 .dark {
@@ -102,8 +102,8 @@
     text-transform: uppercase;
     letter-spacing: 0.3em;
     font-size: 0.75rem;
-    color: var(--color-primary);
-    font-weight: 500;
+    color: var(--color-accent);
+    font-weight: 600;
   }
   .btn-primary {
     display: inline-flex;
