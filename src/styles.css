@@ -34,39 +34,40 @@
   --font-display: "Bebas Neue", "Oswald", "Impact", sans-serif;
   --font-sans: "Inter", system-ui, sans-serif;
 
-  --shadow-glow: 0 0 60px -10px color-mix(in oklab, var(--primary) 40%, transparent);
-  --shadow-elegant: 0 30px 80px -20px oklch(0 0 0 / 0.6);
+  --shadow-glow: 0 0 60px -10px color-mix(in oklab, var(--primary) 30%, transparent);
+  --shadow-elegant: 0 30px 80px -20px oklch(0 0 0 / 0.12);
 }
 
 :root {
   --radius: 0rem;
-  /* DMAC Media — clean monochrome to match the logo. White paper, ink black, single red spark. */
-  --background: oklch(1 0 0);
+  /* DMAC Media — white paper, ink black, drift-red spark. */
+  --background: oklch(0.99 0.002 80);
   --foreground: oklch(0.16 0.005 240);
-  --surface: oklch(0.985 0.002 240);
+  --surface: oklch(0.97 0.002 80);
   --surface-foreground: oklch(0.16 0.005 240);
-  --card: oklch(1 0 0);
+  --card: oklch(0.99 0.002 80);
   --card-foreground: oklch(0.16 0.005 240);
-  --popover: oklch(1 0 0);
+  --popover: oklch(0.99 0.002 80);
   --popover-foreground: oklch(0.16 0.005 240);
-  --primary: oklch(0.16 0.005 240); /* logo ink black */
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.96 0.002 240);
+  --primary: oklch(0.16 0.005 240);
+  --primary-foreground: oklch(0.99 0.002 80);
+  --secondary: oklch(0.95 0.002 80);
   --secondary-foreground: oklch(0.16 0.005 240);
-  --muted: oklch(0.96 0.002 240);
-  --muted-foreground: oklch(0.45 0.005 240);
-  --accent: oklch(0.58 0.22 27); /* subtle drift-red spark */
-  --accent-foreground: oklch(1 0 0);
+  --muted: oklch(0.95 0.002 80);
+  --muted-foreground: oklch(0.48 0.006 240);
+  --accent: oklch(0.58 0.22 27);
+  --accent-foreground: oklch(0.99 0.002 80);
   --destructive: oklch(0.58 0.22 27);
-  --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.9 0.003 240);
-  --input: oklch(0.9 0.003 240);
+  --destructive-foreground: oklch(0.99 0.002 80);
+  --border: oklch(0.88 0.003 240);
+  --input: oklch(0.88 0.003 240);
   --ring: oklch(0.16 0.005 240);
 }
 
-.dark {
-  --background: oklch(0.13 0.005 60);
-  --foreground: oklch(0.96 0.005 80);
+/* Custom easing curves — Emil Kowalski principle: built-in easings are too weak */
+:root {
+  --ease-out-quart: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out-quart: cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 @layer base {
@@ -116,11 +117,21 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-size: 0.8rem;
-    transition: all 0.3s ease;
+    transition: box-shadow 0.2s var(--ease-out-quart), transform 0.16s var(--ease-out-quart);
   }
-  .btn-primary:hover {
-    box-shadow: var(--shadow-glow);
-    transform: translateY(-1px);
+  @media (hover: hover) and (pointer: fine) {
+    .btn-primary:hover {
+      box-shadow: var(--shadow-glow);
+      transform: translateY(-1px);
+    }
+  }
+  .btn-primary:active {
+    transform: scale(0.97);
+    transition-duration: 0.1s;
+  }
+  .btn-primary:focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 3px;
   }
   .btn-ghost {
     display: inline-flex;
@@ -128,15 +139,33 @@
     gap: 0.5rem;
     padding: 0.9rem 1.75rem;
     border: 1px solid var(--color-border);
-    color: var(--color-foreground);
+    color: var(--color-muted-foreground);
     font-weight: 500;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-size: 0.8rem;
-    transition: all 0.3s ease;
+    transition: border-color 0.18s var(--ease-out-quart), color 0.18s var(--ease-out-quart), transform 0.16s var(--ease-out-quart);
   }
-  .btn-ghost:hover {
-    border-color: var(--color-primary);
-    color: var(--color-primary);
+  @media (hover: hover) and (pointer: fine) {
+    .btn-ghost:hover {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+    }
+  }
+  .btn-ghost:active {
+    transform: scale(0.97);
+    transition-duration: 0.1s;
+  }
+  .btn-ghost:focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 3px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

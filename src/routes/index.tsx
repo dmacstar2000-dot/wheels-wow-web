@@ -27,12 +27,12 @@ function Home() {
           height={1080}
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/30" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/60 to-transparent" />
 
         <div className="container-x relative z-10 pb-20 md:pb-32 pt-32">
           <p className="eyebrow mb-6">Aotearoa · Drift · Since 2019</p>
-          <h1 className="font-display text-6xl md:text-8xl lg:text-9xl leading-[0.9] uppercase max-w-5xl">
+          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[0.9] uppercase max-w-4xl">
             Smoke. Steel.<br />
             <span className="text-accent">Sideways.</span>
           </h1>
@@ -100,9 +100,9 @@ function Home() {
                   loading="lazy"
                   width={1280}
                   height={896}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
             ))}
           </div>
