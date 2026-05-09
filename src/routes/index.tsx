@@ -36,7 +36,7 @@ function Home() {
             Smoke. Steel. <span className="text-accent">Sideways.</span>
           </h1>
           <p className="mt-4 max-w-md text-base text-muted-foreground">
-            NZ drift photography & film — trackside from Hampton Downs to Highlands.
+            NZ drift photography & film - trackside from Hampton Downs to Highlands.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link to="/portfolio" className="btn-primary">View the work →</Link>
