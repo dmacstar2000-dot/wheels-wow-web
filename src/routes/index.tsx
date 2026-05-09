@@ -66,9 +66,9 @@ function Home() {
       <section className="border-y border-border">
         <div className="container-x grid grid-cols-2 md:grid-cols-4 divide-x divide-border">
           {[
-            ["120+", "Drift days shot"],
-            ["38", "Pro drivers covered"],
-            ["6yr", "Behind the lens"],
+            ["100+", "Drift days shot"],
+            ["15", "Pro drivers covered"],
+            ["2yr", "Behind the lens"],
             ["NZ", "Born & built"],
           ].map(([n, l]) => (
             <div key={l} className="px-6 py-10 text-center">
