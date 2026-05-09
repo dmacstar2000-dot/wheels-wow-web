@@ -21,12 +21,12 @@ export const Route = createFileRoute("/portfolio")({
 });
 
 const items = [
-  { src: g1, title: "Sunset Slide", car: "Mazda RX-7 FD", loc: "Hampton Downs" },
-  { src: g4, title: "Floodlit Tandem", car: "Nissan Skyline R32", loc: "Pukekohe" },
-  { src: g5, title: "Southern Alps", car: "Toyota AE86", loc: "Highlands" },
-  { src: g3, title: "Garage Build", car: "Lamborghini Huracán", loc: "Auckland" },
-  { src: g2, title: "Detail Study", car: "Carbon close-up", loc: "Studio" },
-  { src: g6, title: "Forest Run", car: "Audi RS6", loc: "Coromandel" },
+  { src: g1, title: "Mad Mike Drift Force", car: "Nissan Laurel C33", loc: "Hampton Downs" },
+  { src: g2, title: "Mad Mike Drift Force", car: "Nissan Laurel C33", loc: "Hampton Downs" },
+  { src: g3, title: "Mad Mike Drift Force", car: "Nissan Laurel C33", loc: "Hampton Downs" },
+  { src: g4, title: "MSC Challenge R2", car: "Nissan S13", loc: "Meremere Driftpark" },
+  { src: g5, title: "Mad Mike Drift Force", car: "Nissan Laurel C33", loc: "Hampton Downs" },
+  { src: g6, title: "MSC Challenge R2", car: "Mazda RX-7 FC", loc: "Meremere Driftpark" },
 ];
 
 function Portfolio() {
