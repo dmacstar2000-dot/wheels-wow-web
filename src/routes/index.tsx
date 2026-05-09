@@ -50,12 +50,8 @@ function Home() {
             {Array.from({ length: 2 }).map((_, i) => (
               <div key={i} className="flex gap-12 text-xs uppercase tracking-[0.3em] text-muted-foreground">
                 <span>Hampton Downs</span><span className="text-accent">×</span>
-                <span>Highlands Motorsport Park</span><span className="text-accent">×</span>
-                <span>Pukekohe</span><span className="text-accent">×</span>
-                <span>Manfeild</span><span className="text-accent">×</span>
-                <span>Ruapuna</span><span className="text-accent">×</span>
-                <span>D1NZ</span><span className="text-accent">×</span>
-                <span>Drift South</span><span className="text-accent">×</span>
+                <span>Taupo Motorsport Park</span><span className="text-accent">×</span>
+                <span>Meremere Drift Park</span><span className="text-accent">×</span>
               </div>
             ))}
           </div>
