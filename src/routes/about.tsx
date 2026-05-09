@@ -49,7 +49,7 @@ function About() {
           loading="lazy"
           width={1320}
           height={880}
-          className="w-full h-full object-cover object-top"
+          className="w-full h-full object-cover object-bottom"
           style={{ transform: "scaleX(-1)" }}
         />
       </section>
