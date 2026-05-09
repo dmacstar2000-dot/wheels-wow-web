@@ -29,10 +29,10 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "DMAC Media — NZ Drift Photography & Film" },
+      { title: "DMAC Media - NZ Drift Photography & Film" },
       { name: "description", content: "New Zealand drift photography and motorsport film. Capturing tyre smoke, touge runs and circuit battles from Auckland to Invercargill." },
       { name: "author", content: "DMAC Media" },
-      { property: "og:title", content: "DMAC Media — NZ Drift Photography & Film" },
+      { property: "og:title", content: "DMAC Media - NZ Drift Photography & Film" },
       { property: "og:description", content: "New Zealand drift photography and motorsport film." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

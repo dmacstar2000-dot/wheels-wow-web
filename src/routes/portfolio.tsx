@@ -11,9 +11,9 @@ import g6 from "@/assets/gallery-6.jpg";
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
-      { title: "Portfolio — DMAC Media Drift Photography" },
-      { name: "description", content: "Selected drift photography from across Aotearoa — D1NZ rounds, touge sessions and private builds." },
-      { property: "og:title", content: "Portfolio — DMAC Media" },
+      { title: "Portfolio - DMAC Media Drift Photography" },
+      { name: "description", content: "Selected drift photography from across Aotearoa - D1NZ rounds, touge sessions and private builds." },
+      { property: "og:title", content: "Portfolio - DMAC Media" },
       { property: "og:description", content: "Selected NZ drift photography." },
     ],
   }),
@@ -37,7 +37,7 @@ function Portfolio() {
         <p className="eyebrow mb-4">Selected work</p>
         <h1 className="font-display text-6xl md:text-8xl uppercase">Portfolio</h1>
         <p className="mt-6 max-w-2xl text-muted-foreground">
-          A rolling cut of recent shoots — comp rounds, midnight touge runs and
+          A rolling cut of recent shoots - comp rounds, midnight touge runs and
           one-off owner sessions across New Zealand.
         </p>
       </section>
@@ -47,7 +47,7 @@ function Portfolio() {
           <figure key={i} className="group relative aspect-[4/3] overflow-hidden">
             <img
               src={it.src}
-              alt={`${it.title} — ${it.car}`}
+              alt={`${it.title} - ${it.car}`}
               loading="lazy"
               width={1280}
               height={896}

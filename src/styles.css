@@ -40,7 +40,7 @@
 
 :root {
   --radius: 0rem;
-  /* DMAC Media — white paper, ink black, drift-red spark. */
+  /* DMAC Media - white paper, ink black, drift-red spark. */
   --background: oklch(0.99 0.002 80);
   --foreground: oklch(0.16 0.005 240);
   --surface: oklch(0.97 0.002 80);
@@ -64,7 +64,7 @@
   --ring: oklch(0.16 0.005 240);
 }
 
-/* Custom easing curves — Emil Kowalski principle: built-in easings are too weak */
+/* Custom easing curves - Emil Kowalski principle: built-in easings are too weak */
 :root {
   --ease-out-quart: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-in-out-quart: cubic-bezier(0.77, 0, 0.175, 1);

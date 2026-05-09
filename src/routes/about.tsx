@@ -7,9 +7,9 @@ const founderPhoto = g5; // replace with: import founderPhoto from "@/assets/abo
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — DMAC Media" },
-      { name: "description", content: "DMAC Media — a one-man drift photography crew based in NZ, shooting since 2019." },
-      { property: "og:title", content: "About — DMAC Media" },
+      { title: "About - DMAC Media" },
+      { name: "description", content: "DMAC Media - a one-man drift photography crew based in NZ, shooting since 2019." },
+      { property: "og:title", content: "About - DMAC Media" },
       { property: "og:description", content: "About DMAC Media." },
     ],
   }),
@@ -37,7 +37,7 @@ function About() {
           </p>
           <p>
             We don't do glossy, sterile car ads. We shoot the smell of two-stroke
-            and the bend of a fender — the bits that make this scene <em>ours</em>.
+            and the bend of a fender - the bits that make this scene <em>ours</em>.
           </p>
         </div>
       </section>
@@ -58,7 +58,7 @@ function About() {
         {[
           { n: "01", t: "Local", d: "From Whangarei to Bluff. We know the spots, we know the corners." },
           { n: "02", t: "Fast", d: "Same-day socials, full edits in 7 days. No waiting weeks for your hero shot." },
-          { n: "03", t: "In it", d: "We don't just photograph the scene — we're part of it. You'll see us at the next round." },
+          { n: "03", t: "In it", d: "We don't just photograph the scene - we're part of it. You'll see us at the next round." },
         ].map((b) => (
           <div key={b.t}>
             <span className="eyebrow text-muted-foreground">{b.n}</span>

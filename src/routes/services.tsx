@@ -5,9 +5,9 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — DMAC Media" },
+      { title: "Services - DMAC Media" },
       { name: "description", content: "Drift event coverage, rolling shots, livery reveals and sponsor edits across New Zealand." },
-      { property: "og:title", content: "Services — DMAC Media" },
+      { property: "og:title", content: "Services - DMAC Media" },
       { property: "og:description", content: "Drift photography & film services in NZ." },
     ],
   }),
@@ -50,7 +50,7 @@ function Services() {
         <h1 className="font-display text-6xl md:text-8xl uppercase">Services</h1>
         <p className="mt-6 max-w-2xl text-muted-foreground">
           Built for drivers, teams and shops. Every package is shaped around your
-          car and your weekend — no cookie cutters.
+          car and your weekend - no cookie cutters.
         </p>
       </section>
 
