@@ -28,10 +28,9 @@ function Home() {
           className="absolute inset-0 w-full h-full object-cover"
           style={{ objectPosition: "center 30%" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-transparent" />
 
-        <div className="container-x relative z-10 pb-20 md:pb-32 pt-32">
+        <div className="container-x relative z-10 pb-12 md:pb-16 pt-32 mt-auto">
           <p className="eyebrow mb-4">Aotearoa · Since 2025</p>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[0.9] uppercase max-w-3xl">
             Built on Smoke, Speed, <span className="text-accent">and Style.</span>
