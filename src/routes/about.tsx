@@ -52,6 +52,8 @@ function About() {
           className="w-full h-full object-cover object-center"
           style={{ transform: "scaleX(-1)" }}
         />
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-background via-background/40 to-transparent" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-background/60 to-transparent" />
       </section>
 
       <section className="container-x pb-24 grid md:grid-cols-3 gap-12">
