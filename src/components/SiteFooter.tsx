@@ -25,7 +25,7 @@ export function SiteFooter() {
           <p className="eyebrow mb-4">Studio</p>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li>dmac_media@outlook.com</li>
-            <li>+64 21 014 9821</li>
+            <li>027 561 9650</li>
             <li>Auckland · Aotearoa</li>
           </ul>
         </div>
