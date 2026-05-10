@@ -36,7 +36,7 @@ function Contact() {
           </div>
           <div>
             <p className="eyebrow mb-2">Phone</p>
-            <p className="text-lg">+64 21 014 9821</p>
+            <p className="text-lg">027 561 9650</p>
           </div>
           <div>
             <p className="eyebrow mb-2">Based</p>
