@@ -42,7 +42,7 @@ function About() {
         </div>
       </section>
 
-      <section className="relative h-[70vh] my-16 overflow-hidden">
+      <section className="relative h-[70vh] my-16 overflow-hidden bg-background">
         <img
           src={founderPhoto}
           alt="DMAC Media founder with his car, mountain backdrop"
@@ -52,8 +52,10 @@ function About() {
           className="w-full h-full object-cover object-center"
           style={{ transform: "scaleX(-1)" }}
         />
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-background via-background/40 to-transparent" />
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-background/60 to-transparent" />
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-2/3 bg-gradient-to-b from-background via-background/70 to-transparent" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-background via-background/70 to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background to-transparent" />
       </section>
 
       <section className="container-x pb-24 grid md:grid-cols-3 gap-12">
