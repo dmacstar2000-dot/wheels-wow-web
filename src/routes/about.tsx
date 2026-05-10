@@ -31,13 +31,14 @@ function About() {
         </div>
         <div className="text-muted-foreground space-y-4 text-lg">
           <p>
-            DMAC Media started in 2025 in a Hamilton garage, shooting mates'
-            S-chassis builds on grainy 35mm. Six years later we're trackside at
-            every major NZ drift round.
+            DMAC Media started in 2025 at a motorsport event called Mad Mike
+            Drift Force, shooting S-chassis and everything in between on a
+            grainy iPhone 10. Two years later we're trackside at every
+            grassroots NZ drift event.
           </p>
           <p>
-            We don't do glossy, sterile car ads. We shoot the smell of two-stroke
-            and the bend of a fender - the bits that make this scene <em>ours</em>.
+            We don't do glossy, sterile car ads. We shoot the smell of burning
+            tire and the odd bent fender, the bits that make this scene <em>ours</em>.
           </p>
         </div>
       </section>

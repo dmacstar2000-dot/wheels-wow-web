@@ -33,7 +33,7 @@ function Home() {
         <div className="container-x relative z-10 pb-20 md:pb-32 pt-32">
           <p className="eyebrow mb-4">Aotearoa · Since 2025</p>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[0.9] uppercase max-w-3xl">
-            Smoke. Steel. <span className="text-accent">Sideways.</span>
+            Built on Smoke, Speed, <span className="text-accent">and Style.</span>
           </h1>
           <p className="mt-4 max-w-md text-base text-muted-foreground">
             NZ drift photography & film - trackside from Hampton Downs to Highlands.
